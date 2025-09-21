@@ -1225,3 +1225,6 @@ body.wide #container #content #main {
 	display: flex;
 	flex-direction: row-reverse;
 }
+#content #main {
+	flex-grow: 1;
+}
