@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"..."
+		]
+	},
+	"skinname-maemoustache": "{{optional}}",
+	"maemoustache-skin-desc": "{{desc|what=skin|name=Maemoustache|url=https://www.mediawiki.org/wiki/Skin:Maemoustache}}",
+	"maemoustache-no-categories": "Message to show when no categories available"
+}

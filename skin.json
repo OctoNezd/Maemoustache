@@ -1,0 +1,84 @@
+{
+	"name": "Maemoustache",
+	"version": "1.0.0",
+	"author": [
+		"[https://skins.wmflabs.org skins.wmflabs.org v.3.0]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:Maemoustache",
+	"descriptionmsg": "maemoustache-skin-desc",
+	"namemsg": "skinname-maemoustache",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.41.0"
+	},
+	"ValidSkinNames": {
+		"maemoustache": {
+			"class": "SkinMustache",
+			"args": [
+				{
+					"name": "maemoustache",
+					"responsive": true,
+					"toc": true,
+					"messages": [
+						"maemoustache-no-categories",
+						"otherlanguages",
+						"sitetitle",
+						"search",
+						"tagline"
+					],
+					"styles": [
+						"codex-styles",
+						"skins.maemoustache.styles"
+					],
+					"scripts": [
+						"skins.maemoustache"
+					]
+				}
+			]
+		}
+	},
+	"MessagesDirs": {
+		"Maemoustache": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.maemoustache.styles": {
+			"class": "MediaWiki\\ResourceLoader\\SkinModule",
+			"features": {
+				"normalize": true,
+				"elements": true,
+				"content-tables": true,
+				"content-links": true,
+				"content-media": true,
+				"content-links-external": false,
+				"interface-message-box": false,
+				"interface-category": true,
+				"toc": true
+			},
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"styles": [
+				"resources/css/main.css",
+				"resources/css/master.css"
+			]
+		},
+		"skins.maemoustache": {
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"packageFiles": [
+				"resources/skin.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Maemoustache"
+	},
+	"ResourceModuleSkinStyles": {},
+	"manifest_version": 2
+}

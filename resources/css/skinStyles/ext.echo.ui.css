@@ -1,0 +1,4 @@
+/* Make the flyouts' text a bit bigger and thus more readable, default font size is too small */
+.mw-echo-ui-overlay {
+	font-size: 1.2em;
+}

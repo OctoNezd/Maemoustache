@@ -1,0 +1,7 @@
+/* Super cheap hack to turn the black Echo OOUI icons in the personal tools area a bit...less black, because
+ * black icons on a black background is not very good
+ */
+li#pt-notifications-alert a.oo-ui-icon-bell,
+li#pt-notifications-notice a.oo-ui-icon-tray {
+	filter: invert(100%);
+}

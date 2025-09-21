@@ -1,0 +1,47 @@
+#container #header #user-login #username {
+	height: 31px;
+	width: 92px;
+	background-attachment: fixed;
+}
+
+#container #header #user-login #password {
+	height: 31px;
+	width: 91px;
+	background-attachment: fixed;
+}
+
+#container #navigation #search #query {
+	width: 191px;
+	height: 31px;
+	padding-right: 10px;
+	background-attachment: fixed;
+}
+
+#container #content #login_container #username2 {
+	background-attachment: fixed;
+	height: 33px;
+	width: 153px;
+}
+
+#container #content #login_container #password2 {
+	background-attachment: fixed;
+	width: 153px;
+	height: 33px;
+}
+
+#container #content #login_container #midcom_services_auth_frontend_form_submit {
+	background-attachment: fixed;
+	width: 73px;
+	height: 22px;
+	text-indent: -1000px;
+	font-size: 0;
+}
+
+#container #content #main #main-wrapper {
+	float: none;
+}
+
+.bm {
+	zoom: 1; 
+	background: url(../images/box-bm.gif) 0 100% repeat-x;
+}

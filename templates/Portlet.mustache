@@ -1,0 +1,11 @@
+<div role="navigation" id="{{id}}" class="{{class}}" title="{{html-tooltip}}"
+    aria-labelledby="{{id}}-label">
+    <div class="portlet" id="p-personal" role="navigation">
+        <h5>{{label}}</h5>
+        <div class="pBody">
+            <ul>
+                {{#array-items}}{{>ListItem}}{{/array-items}}
+            </ul>
+        </div>
+    </div>
+</div>

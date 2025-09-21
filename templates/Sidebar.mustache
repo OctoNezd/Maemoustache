@@ -1,0 +1,9 @@
+<div class="toggle-list" id="sidebar">
+	<div id="nav-sub">
+		{{#data-portlets-sidebar}}
+		{{#data-portlets.data-views}}{{>Portlet}}{{/data-portlets.data-views}}
+		{{#data-portlets-first}}{{>Portlet}}{{/data-portlets-first}}
+		{{#array-portlets-rest}}{{>Portlet}}{{/array-portlets-rest}}
+		{{/data-portlets-sidebar}}
+	</div>
+</div>

@@ -1,0 +1,36 @@
+<div id="navigation">
+    <div id="navigation-left-wrapper">
+        <div id="navigation-right-wrapper">
+            <ul>
+                {{#array-items}}{{>ListItem}}{{/array-items}}
+            {{! <?php
+            $siteNavLinks = $skin->buildSiteNavigation();
+            foreach ( $siteNavLinks as $link ) {
+                $class = '';
+                if ( !empty( $link['class'] ) && $link['class'] && $link['class'] !== '' ) {
+                    // Currently (April 2025) $link['class'] can only ever
+                    // be either empty or 'active', so this is fine.
+                    $class .= ' class="' . $link['class'] . '"';
+                }
+
+                $text = '';
+                if ( isset( $link['text'] ) && $link['text'] ) {
+                    $text = htmlspecialchars( $link['text'], ENT_QUOTES );
+                }
+
+                // @phan-suppress-next-line SecurityCheck-XSS Yes, it looks scary but based on testing, it's fine
+                echo "<li{$class}><a href=\"{$link['href']}\">{$text}</a></li>";
+            }
+            ?> }}
+            </ul>
+            {{#data-search-box}}
+            <form action="{{form-action}}" role="search" class="mw-portlet" id="search">
+                <input type="hidden" name="title" value="{{page-title}}">
+                {{{html-input}}}
+                {{{html-button-search}}}
+            </form>
+            {{/data-search-box}}
+            {{! <?php $this->searchBox(); ?> }}
+        </div><!-- #navigation-right-wrapper -->
+    </div><!-- #navigation-left-wrapper -->
+</div><!-- /navigation -->
