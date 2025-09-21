@@ -2,7 +2,7 @@
 <div id="catlinks" class="catlinks" data-mw="interface">
 	{{#data-category-normal}}
 	<div id="{{id}}" class="{{class}}">
-		<ul>{{#array-items}}{{>ListItem}}{{/array-items}}</ul>
+		<ul>{{#array-items}}{{&html-item}}{{/array-items}}</ul>
 		{{{html-after-portal}}}
 	</div>
 	{{/data-category-normal}}

@@ -64,15 +64,6 @@
 				"resources/css/main.css",
 				"resources/css/master.css"
 			]
-		},
-		"skins.maemoustache": {
-			"targets": [
-				"desktop",
-				"mobile"
-			],
-			"packageFiles": [
-				"resources/skin.js"
-			]
 		}
 	},
 	"ResourceFileModulePaths": {
