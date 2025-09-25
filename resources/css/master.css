@@ -1224,6 +1224,7 @@ body.wide #container #content #main {
 #content {
 	display: flex;
 	flex-direction: row-reverse;
+	justify-content: space-evenly;
 }
 #content #main {
 	flex-grow: 1;
